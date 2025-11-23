@@ -1,0 +1,44 @@
+model_name: RandomForestClassifier_Final
+description: |
+  Modelo de clasificación final para predecir el ganador de partidos de tenis.
+  Optimizado para estabilidad temporal (menor overfitting) con feature engineering retrospectivo.
+
+model_type: sklearn.ensemble.RandomForestClassifier
+
+hyperparameters:
+  # Parámetros óptimos del Grid Search (ROC AUC)
+  n_estimators: 400
+  max_depth: 8
+  min_samples_split: 5
+  max_features: 'sqrt'
+  
+  # Parámetros fijos necesarios para el entrenamiento final
+  class_weight: balanced
+  random_state: 42
+  criterion: gini
+
+data_preprocessing:
+  scaler: sklearn.preprocessing.StandardScaler # Incluido en el Pipeline
+
+features:
+  count: 14
+  list:
+    # Habilidad y Forma (Core Predictivo)
+    - Elo_Diff
+    - Elo_Surface_Diff
+    - H2H_Advantage
+    - Recent_Form_10_Diff
+    
+    # Experiencia Dinámica y Estática
+    - Age_Diff
+    - Tournament_Titles_Diff_Dynamic
+    - Grand_Titles_Diff_Dynamic
+    
+    # Contexto del Partido (US Open)
+    - Round_Ordinal
+    - Series_Ordinal
+    - Court_Indoor
+    - Best_of_5
+    - Surface_Clay
+    - Surface_Grass
+    - Surface_Hard
