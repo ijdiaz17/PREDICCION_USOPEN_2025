@@ -41,11 +41,13 @@ El proyecto sigue una arquitectura modular para garantizar la separación de res
 │   ├── utils.py            # Funciones auxiliares (H2H Caching, simulación).
 │   └── requirements.txt    # Dependencias del proyecto.
 │
-└── 5_docs/
-    ├── PRESENTACION.pdf    
-    ├── simulacion_determinista.mp4
-    ├── simulacion_montecarlo.mp4 
-    └── 
+├── 5_docs/
+│    ├── PRESENTACION.pdf    
+│    ├── simulacion_determinista.mp4
+│    ├── simulacion_montecarlo.mp4 
+│    └── 
+│
+└─── README.md
 
 ```
 
