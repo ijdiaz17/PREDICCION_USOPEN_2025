@@ -66,6 +66,19 @@ El proyecto sigue una arquitectura modular para garantizar la separación de res
 
 ## Instrucciones de Despliegue
 
+La aplicación ha sido desplegada exitosamente en Streamlit Community Cloud, asegurando la accesibilidad y el rendimiento de la arquitectura de caching optimizada.
+
+Acceso Directo a la Aplicación Web
+Puedes acceder a las dos versiones del modelo a través de los siguientes enlaces:
+
+Simulación Determinista (Camino Más Probable): https://prediccionusopen2025determinista.streamlit.app/
+
+Simulación Monte Carlo (Análisis de Riesgo): https://prediccionusopen2025montecarlo.streamlit.app/
+
+
+El despliegue utiliza @st.cache_resource para asegurar que la carga pesada del DataFrame y la pre-computación de los datos (H2H Caching) se ejecuten solo una vez en el servidor. Esto es clave para garantizar la alta velocidad de la interfaz.
+
+
 Para ejecutar la aplicación interactiva y simular el torneo (usando la arquitectura de caching optimizada):  
 - Clonar el respositorio
 - Instalar Dependencias:  
@@ -81,9 +94,6 @@ pip install -r 4_app_streamlit/requirements.txt
 streamlit run 4_app_streamlit/app.py
 
 ```
-
-El despliegue utiliza @st.cache_resource para asegurar que la carga pesada del modelo y la pre-computación de los datos (H2H Caching) se ejecuten solo una vez, garantizando una alta velocidad en la interfaz.
-
 ---
 
 ## 📚 Autor
