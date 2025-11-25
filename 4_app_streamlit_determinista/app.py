@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os
 
 # --- 1. Importar funciones y datos estructurales ---
 # Importamos la función de simulación determinista
@@ -84,7 +85,10 @@ div.stButton > button:hover {
 # Usamos columnas para centrar la imagen (3 columnas iguales para centrar el ancho)
 col_img_1, col_img_2, col_img_3 = st.columns([1, 1, 1])
 with col_img_2:
-    st.image("US_OPEN_Logo.png", width=300)
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    logo_path = os.path.join(current_dir, "US_OPEN_Logo.png")
+    st.image(logo_path, width=300)
 
 # El título principal está centrado por el CSS h1
 st.title("🎾 Predicción DETERMINISTA del US Open 2025") # Título actualizado
