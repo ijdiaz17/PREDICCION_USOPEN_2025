@@ -43,9 +43,9 @@ El proyecto sigue una arquitectura modular para garantizar la separación de res
 │
 ├── 5_docs/
 │    ├── PRESENTACION.pdf    
+│    ├── PRESENTACION JUEVES.pdf
 │    ├── simulacion_determinista.mp4
-│    ├── simulacion_montecarlo.mp4 
-│    └── 
+│    └── simulacion_montecarlo.mp4 
 │
 └─── README.md
 
