@@ -1,0 +1,7 @@
+# Paquetes requeridos para la app Streamlit y el modelo Scikit-learn
+
+streamlit
+scikit-learn==1.7.2
+pandas
+numpy
+joblib==1.5.2
