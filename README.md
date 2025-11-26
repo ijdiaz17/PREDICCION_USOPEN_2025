@@ -73,8 +73,9 @@ Puedes acceder a las dos versiones del modelo a través de los siguientes enlace
 
 Simulación Determinista (Camino Más Probable): https://prediccionusopen2025determinista.streamlit.app/
 
-Simulación Monte Carlo (Análisis de Riesgo): https://prediccionusopen2025montecarlo.streamlit.app/
+Simulación Monte Carlo - 1 run (Análisis de Riesgo): https://prediccionusopen2025montecarlo.streamlit.app/
 
+La simulación Monte Carlo de 500 runs no tiene app por cumplimiento de tiempos estipulados para la presentación en clase.
 
 El despliegue utiliza @st.cache_resource para asegurar que la carga pesada del DataFrame y la pre-computación de los datos (H2H Caching) se ejecuten solo una vez en el servidor. Esto es clave para garantizar la alta velocidad de la interfaz.
 
