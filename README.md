@@ -68,7 +68,7 @@ El proyecto sigue una arquitectura modular para garantizar la separación de res
 
 La aplicación ha sido desplegada exitosamente en Streamlit Community Cloud, asegurando la accesibilidad y el rendimiento de la arquitectura de caching optimizada.
 
-Acceso Directo a la Aplicación Web
+Acceso Directo a la Aplicación Web  
 Puedes acceder a las dos versiones del modelo a través de los siguientes enlaces:
 
 Simulación Determinista (Camino Más Probable): https://prediccionusopen2025determinista.streamlit.app/
