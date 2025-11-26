@@ -42,8 +42,8 @@ El proyecto sigue una arquitectura modular para garantizar la separación de res
 │   └── requirements.txt    # Dependencias del proyecto.
 │
 ├── 5_docs/
-│    ├── PRESENTACION.pdf    
-│    ├── PRESENTACION JUEVES.pdf
+│    ├── PRESENTACION JUEVES.pdf    
+│    ├── PRESENTACION VIERNES.pdf
 │    ├── simulacion_determinista.mp4
 │    └── simulacion_montecarlo.mp4 
 │
