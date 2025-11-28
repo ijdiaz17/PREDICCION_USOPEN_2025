@@ -98,4 +98,4 @@ streamlit run 4_app_streamlit/app.py
 ---
 
 ## 📚 Autor
-Proyecto realizado por **Ignacio Díaz** como práctica de entrenamiento de modelos de ML.
+Proyecto realizado por **Ignacio Díaz**
